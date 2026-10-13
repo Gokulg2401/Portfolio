@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/target
+**/.git
+**/.vscode
+**/.idea
+.github
+backend/secrets.properties
+backend/src/main/resources/static

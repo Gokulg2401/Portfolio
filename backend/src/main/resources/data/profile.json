@@ -1,0 +1,97 @@
+{
+  "name": "Gokul A",
+  "title": "Full Stack Developer",
+  "roles": ["Full Stack Developer", "Java & Spring Boot Developer", "React Developer", "REST API Engineer"],
+  "tagline": "I build enterprise web applications with Java, Spring Boot and React.",
+  "summary": "Java Full Stack Developer with 1 year of experience building enterprise web applications using Java, Spring Boot, Spring Data JPA/Hibernate, React, JavaScript (ES6+) and REST APIs. Skilled in data-driven workflows, RESTful microservices, CRUD operations and SQL Server query optimization, with secure coding practices via Spring Security. I deliver scalable applications for government and port-management systems.",
+  "location": "Chennai, India",
+  "availability": "Available to join immediately",
+  "resume": {
+    "url": "/resume/Gokul-A_FSD_Resume.pdf",
+    "fileName": "Gokul-A_FSD_Resume.pdf"
+  },
+  "contact": {
+    "email": "gokul240102@gmail.com",
+    "phone": "+91 7708113676",
+    "linkedin": "https://linkedin.com/in/gkl-dev/",
+    "github": "https://github.com/Gokulg2401"
+  },
+  "highlights": [
+    { "value": "1 yr", "label": "Professional experience" },
+    { "value": "2", "label": "Enterprise systems shipped" },
+    { "value": "10+", "label": "Secured REST endpoints" },
+    { "value": "15%", "label": "Faster page loads" }
+  ],
+  "services": [
+    {
+      "icon": "frontend",
+      "title": "Frontend Development",
+      "description": "Responsive React interfaces with reusable components, hooks, form validation and performance tuning like lazy loading and code splitting."
+    },
+    {
+      "icon": "backend",
+      "title": "Backend & REST APIs",
+      "description": "Spring Boot services and REST APIs with clean contracts, structured exception handling and Spring Data JPA persistence."
+    },
+    {
+      "icon": "database",
+      "title": "Database & Performance",
+      "description": "Microsoft SQL Server data modelling and query optimization that makes data-heavy workflows noticeably faster."
+    },
+    {
+      "icon": "security",
+      "title": "Secure, Reliable Delivery",
+      "description": "Spring Security endpoint protection, input validation, code reviews and CI/CD-driven releases with fewer defects."
+    }
+  ],
+  "experience": [
+    {
+      "company": "IC & SR, IIT Madras",
+      "role": "Full Stack Developer",
+      "period": "Aug 2025 – Aug 2026",
+      "stack": ["Java", "Spring Boot", "Spring Data JPA", "Spring Security", "React", "JavaScript", "REST APIs", "MS SQL Server"],
+      "projects": [
+        {
+          "name": "NDCS – National Database of Coastal Shipping",
+          "points": [
+            "Developed React-based user and admin interfaces for coastal shipping data management, streamlining license-processing workflows.",
+            "Integrated frontend workflows with Spring Boot REST APIs, reducing average API response handling time by 15%.",
+            "Built a shared library of 8+ reusable React components and form validations adopted across modules.",
+            "Optimized Microsoft SQL Server queries, improving data retrieval speed by 12%.",
+            "Built persistence layers with Spring Data JPA/Hibernate across relational data models.",
+            "Secured 10+ REST endpoints with Spring Security, input validation and structured exception handling."
+          ]
+        },
+        {
+          "name": "LMS – Land Management System, Odisha Port",
+          "points": [
+            "Developed React modules for land, lease, license, market, quarters and spatial-data management.",
+            "Integrated modules with Spring Boot REST APIs and SQL Server, powering data-driven forms and workflows.",
+            "Implemented CRUD operations, form validations and API-driven workflows across modules.",
+            "Resolved issues across frontend, backend and database layers to improve reliability.",
+            "Cut page load time by 15% through lazy loading, code splitting, memoization and backend query optimization.",
+            "Collaborated with backend and QA teams via Git and CI/CD pipelines for on-time, defect-reduced releases."
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    { "category": "Frontend", "items": ["HTML5", "CSS3", "React", "React Router", "React Hooks", "JavaScript (ES6+)", "Responsive UI"] },
+    { "category": "Backend", "items": ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Hibernate", "Spring Security", "Microservices"] },
+    { "category": "Core Java", "items": ["OOP", "Collections", "Exception Handling", "Multithreading", "Streams & Lambdas"] },
+    { "category": "APIs", "items": ["REST APIs", "JSON", "API Contracts", "Data Mapping", "Frontend–Backend Integration"] },
+    { "category": "Database", "items": ["Microsoft SQL Server", "SQL", "Query Optimization", "CRUD Operations"] },
+    { "category": "DevOps & Tools", "items": ["Git", "GitHub", "AWS", "Docker", "Maven", "Postman", "SSMS", "VS Code"] },
+    { "category": "AI Tools", "items": ["GitHub Copilot", "Amazon Q", "Claude", "Gemini"] }
+  ],
+  "certifications": [
+    { "name": "Full Stack Development", "issuer": "FITA Academy", "description": "End-to-end web development with Java, Spring Boot, React and SQL Server, with hands-on project work." },
+    { "name": "AWS Cloud Practitioner Essentials", "issuer": "Amazon Web Services", "description": "AWS Cloud concepts, core services, security, pricing and architecture best practices." }
+  ],
+  "education": [
+    { "institution": "SASTRA Deemed University", "degree": "B.Tech, Mechanical Engineering", "year": "2024", "score": "72%" },
+    { "institution": "Sri Matha Matriculation Higher Secondary School", "degree": "Higher Secondary (HSC) – 12th", "year": "2019", "score": "80%" },
+    { "institution": "Sri Matha Matriculation Higher Secondary School", "degree": "Secondary School (SSLC) – 10th", "year": "2017", "score": "94%" }
+  ]
+}

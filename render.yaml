@@ -1,0 +1,16 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# One web service: Docker builds the React app into the Spring Boot jar.
+services:
+  - type: web
+    name: gokul-portfolio
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/profile
+    autoDeploy: true
+    envVars:
+      # Resend API key for the contact form (Render's free plan blocks SMTP). Set in the dashboard.
+      - key: RESEND_API_KEY
+        sync: false
+      - key: CONTACT_RECIPIENT
+        value: gokul240102@gmail.com
