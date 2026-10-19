@@ -372,18 +372,6 @@ button {
   color: var(--accent);
   background: rgba(94, 234, 212, 0.08);
 }
-.nav-links a.active::after {
-  content: '';
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  translate: -50% 0;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 6px var(--accent);
-}
 .nav-resume {
   margin-left: 10px;
 }
@@ -1161,7 +1149,8 @@ button {
   transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   word-break: break-word;
 }
-a.info-card:hover {
+a.info-card:hover,
+.info-card.hoverable:hover {
   border-color: var(--accent);
   transform: translateX(5px);
   box-shadow: -4px 0 20px -8px rgba(94, 234, 212, 0.3);
@@ -1187,7 +1176,8 @@ a.info-card:hover {
   border: 1px solid rgba(94, 234, 212, 0.15);
   transition: background 0.25s ease, box-shadow 0.25s ease;
 }
-a.info-card:hover .info-icon {
+a.info-card:hover .info-icon,
+.info-card.hoverable:hover .info-icon {
   background: rgba(94, 234, 212, 0.18);
   box-shadow: 0 0 16px rgba(94, 234, 212, 0.25);
 }
