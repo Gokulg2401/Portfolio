@@ -1,4 +1,4 @@
-import { HiOutlineBadgeCheck, HiOutlineAcademicCap } from 'react-icons/hi'
+import { HiOutlineBadgeCheck, HiOutlineAcademicCap, HiOutlineCheckCircle } from 'react-icons/hi'
 import Reveal from './Reveal'
 import SectionHeading from './SectionHeading'
 
@@ -16,6 +16,7 @@ function Credentials({ certifications, education }) {
                 <h3>{cert.name}</h3>
                 <p className="cred-sub">{cert.issuer}</p>
                 <p className="cred-desc">{cert.description}</p>
+                <span className="cred-badge"><HiOutlineCheckCircle /> Certified</span>
               </div>
             </Reveal>
           ))}

@@ -1,7 +1,38 @@
+import { useEffect, useRef } from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { HiOutlineMail, HiOutlineLocationMarker, HiOutlineEye, HiOutlineDownload, HiArrowRight } from 'react-icons/hi'
+import { HiOutlineMail, HiOutlineLocationMarker, HiOutlineEye, HiOutlineDownload, HiArrowRight, HiChevronDown } from 'react-icons/hi'
 import { useTypewriter } from '../hooks/useTypewriter'
 import TechOrbit from './TechOrbit'
+
+function Particles() {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+    const count = 18
+    const particles = []
+
+    for (let i = 0; i < count; i++) {
+      const el = document.createElement('div')
+      el.className = 'particle'
+      const size = Math.random() * 4 + 2
+      el.style.cssText = `
+        width:${size}px;height:${size}px;
+        left:${Math.random() * 100}%;
+        bottom:${Math.random() * 20}%;
+        animation-duration:${Math.random() * 12 + 10}s;
+        animation-delay:${Math.random() * -20}s;
+        opacity:0;
+      `
+      container.appendChild(el)
+      particles.push(el)
+    }
+    return () => particles.forEach((p) => p.remove())
+  }, [])
+
+  return <div ref={containerRef} className="hero-particles" aria-hidden="true" />
+}
 
 function Hero({ profile, initials, onOpenResume }) {
   const { name, roles, tagline, location, availability, contact, resume } = profile
@@ -10,6 +41,7 @@ function Hero({ profile, initials, onOpenResume }) {
   return (
     <section className="hero" id="top">
       <div className="hero-grid-bg" aria-hidden="true" />
+      <Particles />
       <div className="container hero-grid">
         <div className="hero-copy">
           <p className="hero-badge">
@@ -75,6 +107,9 @@ function Hero({ profile, initials, onOpenResume }) {
         <TechOrbit initials={initials} />
       </div>
 
+      <a href="#about" className="hero-scroll-hint" aria-label="Scroll down">
+        <HiChevronDown />
+      </a>
     </section>
   )
 }

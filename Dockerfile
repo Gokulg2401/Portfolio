@@ -9,7 +9,7 @@ COPY frontend/ ./
 RUN npm run build
 
 # ---------- 2. Build the Spring Boot jar (with the frontend bundled in) ----------
-FROM maven:3.9-eclipse-temurin-21 AS backend
+FROM maven:3.9-eclipse-temurin-25 AS backend
 WORKDIR /backend
 COPY backend/pom.xml ./
 RUN mvn -q -B dependency:go-offline
@@ -19,7 +19,7 @@ COPY --from=frontend /frontend/dist ./src/main/resources/static
 RUN mvn -q -B -DskipTests package
 
 # ---------- 3. Slim runtime image ----------
-FROM eclipse-temurin:21-jre-alpine
+FROM eclipse-temurin:25-jre-alpine
 WORKDIR /app
 RUN addgroup -S app && adduser -S app -G app
 COPY --from=backend /backend/target/portfolio-*.jar app.jar

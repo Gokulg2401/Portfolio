@@ -20,6 +20,7 @@ function Services({ services }) {
             const Icon = icons[service.icon] ?? HiOutlineServer
             return (
               <Reveal key={service.title} className="card service" delay={i * 90}>
+                <span className="service-num">0{i + 1}</span>
                 <span className="service-icon">
                   <Icon />
                 </span>
