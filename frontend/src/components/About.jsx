@@ -1,8 +1,22 @@
-import { HiOutlineCode, HiOutlineLightningBolt, HiOutlineAcademicCap, HiOutlineStar } from 'react-icons/hi'
+import { HiOutlineCode, HiOutlineLightningBolt, HiOutlineShieldCheck, HiOutlineChip } from 'react-icons/hi'
+import { MdRocketLaunch } from 'react-icons/md'
 import Reveal from './Reveal'
 import SectionHeading from './SectionHeading'
 
-const highlightIcons = [HiOutlineCode, HiOutlineLightningBolt, HiOutlineAcademicCap, HiOutlineStar]
+const highlightIconMap = {
+  'professional experience': HiOutlineCode,
+  'enterprise systems shipped': HiOutlineChip,
+  'secured rest endpoints': HiOutlineShieldCheck,
+  'faster page loads': HiOutlineLightningBolt,
+}
+
+function getIcon(label) {
+  const key = label.toLowerCase()
+  for (const [k, Icon] of Object.entries(highlightIconMap)) {
+    if (key.includes(k.split(' ').pop())) return Icon
+  }
+  return HiOutlineCode
+}
 
 function About({ profile }) {
   return (
@@ -14,7 +28,7 @@ function About({ profile }) {
 
         <div className="highlights">
           {profile.highlights.map((h, i) => {
-            const Icon = highlightIcons[i % highlightIcons.length]
+            const Icon = getIcon(h.label)
             return (
               <Reveal key={h.label} className="highlight" delay={i * 80}>
                 <Icon className="highlight-icon" aria-hidden="true" />
