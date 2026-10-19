@@ -796,8 +796,8 @@ button {
   opacity: 1;
 }
 .card:hover {
-  border-color: rgba(94, 234, 212, 0.45);
-  box-shadow: 0 24px 48px -20px rgba(94, 234, 212, 0.25), 0 0 0 1px rgba(94,234,212,0.08);
+  border-color: rgba(94, 234, 212, 0.3);
+  box-shadow: 0 20px 40px -20px rgba(94, 234, 212, 0.15), 0 0 0 1px rgba(94,234,212,0.06);
 }
 .card.reveal-visible:hover {
   transform: translateY(-5px);
@@ -879,7 +879,7 @@ button {
   position: absolute;
   inset: -1px;
   border-radius: calc(var(--radius) + 1px);
-  background: linear-gradient(135deg, rgba(94,234,212,0.3), rgba(129,140,248,0.3));
+  background: linear-gradient(135deg, rgba(94,234,212,0.12), rgba(129,140,248,0.12));
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;

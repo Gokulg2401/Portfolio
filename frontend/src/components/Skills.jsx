@@ -41,7 +41,6 @@ function Skills({ skills }) {
                 <h3>
                   <span className="skill-category-icon"><Icon aria-hidden="true" /></span>
                   {group.category}
-                  <span className="skill-count">{group.items.length}</span>
                 </h3>
                 <ul className="chips">
                   {group.items.map((item) => (
