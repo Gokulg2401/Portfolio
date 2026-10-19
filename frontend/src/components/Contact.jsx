@@ -171,7 +171,7 @@ function Contact({ profile }) {
                 {contact.phone}
               </span>
             </a>
-            <div className="info-card">
+            <div className="info-card hoverable">
               <span className="info-icon">
                 <HiOutlineLocationMarker />
               </span>
